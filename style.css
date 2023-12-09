@@ -72,6 +72,7 @@ button, a{
 }
 .hide, #preview-container{
     display: none;
+    background: none;
 }
 #buttons{
     display: block;
