@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    color: white;
+}
+
+body{
+    padding: 1em;
+   
+}
+.container{
+    background-color:#04111f;
+}
+
+#wrapper img{
+    max-width: 100%;
+    overflow: hidden;
+    
+}
+#container{
+    background-image:url(christmas.jpg);
+    background-size: cover;
+    position: relative;
+  
+}
+#container, #preview-container{
+   
+     
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 70vh;
+     overflow: hidden;
+     position: relative;
+     display: flex;
+     justify-content: start;
+     align-items:end;
+     bottom:0;
+     
+}
+
+
+
+
+/*//////////////////////// UPLOAD ////////////////////*/
+#display_image{
+   width: 150px;
+   height: 150px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: absolute;
+   
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+button, a{
+    font-size: 1em;
+    background-color: #ffc4c4;
+    border: none;
+    outline: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #000000;
+}
+.hide, #preview-container{
+    display: none;
+}
+#buttons{
+    display: block;
+}
+
+
+
+
+@media (max-width:1440px) {
+    #container, #preview-container{
+          height: 50vh;  
+   }
+}
+
+@media (max-width:768px) {
+    #container, #preview-container{
+          height: 50vh;  
+   }
+   #display_image{
+    bottom :180px;
+    position: absolute;
+    
+ }
+   
+}
+
+@media (max-width:390px) {
+    #container, #preview-container{
+          height: 40vh;  
+   }
+   #display_image{
+    bottom :0;
+    }
+    .buttonPlusFile{
+        display: block;
+        
+    }
+    .down{
+        margin-top: 10px !important;
+    }
+}
+
+
+
+
